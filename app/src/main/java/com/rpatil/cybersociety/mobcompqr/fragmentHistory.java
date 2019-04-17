@@ -12,13 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.rpatil.cybersociety.mobcompqr.genhistory.fragmentGenHistory;
+import com.rpatil.cybersociety.mobcompqr.scanhistory.fragmentScanHistory;
 
 
 public class fragmentHistory extends Fragment {
@@ -77,7 +73,7 @@ public class fragmentHistory extends Fragment {
         gHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i  = new Intent(getContext(), fragmentGenerateHistory.class);
+                Intent i  = new Intent(getContext(), fragmentGenHistory.class);
                 startActivity(i);
             }
         });

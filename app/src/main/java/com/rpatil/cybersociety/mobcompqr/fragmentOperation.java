@@ -94,11 +94,11 @@ public class fragmentOperation extends Fragment {
                     JSONObject obj = new JSONObject(result.getContents());
                     ((TextView)Scan.findViewById(R.id.timestamp_gen)).setText(obj.get("timestamp").toString());
                     ((TextView) Generate.findViewById(R.id.payload_gen)).setText(obj.get("payload").toString());
-                    Toast.makeText(getContext(), obj.toString(),Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), obj.toString(),Toast.LENGTH_LONG).show();
                 } catch (JSONException e) {
                     e.printStackTrace();
 
-                    Toast.makeText(getContext(), result.getContents(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), result.getContents(), Toast.LENGTH_LONG).show();
                 }
             }
         } else {

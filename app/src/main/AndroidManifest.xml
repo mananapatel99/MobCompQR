@@ -16,16 +16,6 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity
-            android:name=".fragmentGenerateHistory">
-
-        </activity>
-
-        <activity
-            android:name=".fragmentScanHistory" >
-
-        </activity>
-
-        <activity
             android:name=".fragmentHistory" >
 
         </activity>

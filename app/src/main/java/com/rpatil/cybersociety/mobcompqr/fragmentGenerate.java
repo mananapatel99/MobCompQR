@@ -1,7 +1,7 @@
 package com.rpatil.cybersociety.mobcompqr;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -26,7 +26,7 @@ public class fragmentGenerate extends AppCompatActivity {
                 genHis.put("timestamp", new Date().toString());
                 genHis.put("Payload", ((EditText)findViewById(R.id.qrtext)).getText().toString());
 
-                final String URL = "https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=" + ((EditText)findViewById(R.id.qrtext)).getText().toString();
+                final String URL = "https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=" + genHis.toString();
                 Picasso.get().load(URL).into((ImageView)findViewById(R.id.qrimage));
 
             }
